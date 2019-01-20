@@ -31,14 +31,32 @@ $(document).ready(function(){
   });
 
 
-  function parseField(value){
-    if(!/^[+-_]?\d+$/gi.test(value)){
-        return value.replace(/[a-zA-Z]+/gi,'');
-    }
+  function parseFieldPhone(value){
+    return  value.replace(/[^-+()0-9\s]/gi,'');
+  }
+
+  function parseFieldNum(value){
+    return  value.replace(/[^0-9]/gi,'');
   }
 
   $('#phoneNum').keyup(function(){
-    $(this).val(parseField($(this).val()));
+    $(this).val(parseFieldPhone($(this).val()));
   });
+
+  $('#inputCorScore').keyup(function(){
+    $(this).val(parseFieldNum($(this).val()));
+  });
+
+  $('#inputScore').keyup(function(){
+    $(this).val(parseFieldNum($(this).val()));
+  });
+
+  $('#inputBIK').keyup(function(){
+    $(this).val(parseFieldNum($(this).val()));
+  });
+
+  $('#inputKPP').keyup(function(){
+    $(this).val(parseFieldNum($(this).val()));
+  }); 
   
 });

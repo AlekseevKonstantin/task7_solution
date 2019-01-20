@@ -1,5 +1,35 @@
-body {
-  font-family: 'Open Sans', sans-serif;
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url('../fonts/MyriadPro-Regular.eot');
+  src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MyriadPro-Regular.woff') format('woff'),
+  url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+  
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('../fonts/OpenSans-Regular.eot');
+  src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Regular.woff') format('woff'),
+  url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.kurierchikof-rs-top-menu button:active,
+.kurierchikof-rs-profile-form button:active, 
+.kurierchikof-rs-top-menu button:focus,
+.kurierchikof-rs-profile-form button:active{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.kurierchikof-rs-top-menu button::-moz-focus-inner,
+.kurierchikof-rs-profile-form button::-moz-focus-inner {
+  border: 0 !important;
+  box-shadow: none !important;
 }
 
 .kurierchikof-rs-profile-form input::-webkit-outer-spin-button,
@@ -11,15 +41,36 @@ body {
   cursor: pointer;
 }
 
+.kurierchikof-rs-top-menu p,
+.kurierchikof-rs-top-menu h1,
+.kurierchikof-rs-top-menu h2,
+.kurierchikof-rs-top-menu h3,
+.kurierchikof-rs-top-menu h4,
+.kurierchikof-rs-top-menu h5,
+.kurierchikof-rs-top-menu h6,
+.kurierchikof-rs-top-menu a,
+.kurierchikof-rs-top-menu button,
+.kurierchikof-rs-top-menu div,
+.kurierchikof-rs-top-menu span,
+.kurierchikof-rs-profile-form p,
+.kurierchikof-rs-profile-form h1,
+.kurierchikof-rs-profile-form h2,
+.kurierchikof-rs-profile-form h3,
+.kurierchikof-rs-profile-form h4,
+.kurierchikof-rs-profile-form h5,
+.kurierchikof-rs-profile-form h6,
+.kurierchikof-rs-profile-form a,
+.kurierchikof-rs-profile-form button,
+.kurierchikof-rs-profile-form div,
+.kurierchikof-rs-profile-form span{
+  font-family: 'Open Sans Regular', sans-serif;
+}
+
 /* custom classes */
 
 .kurierchikof-rs-profile-form a,
 .kurierchikof-rs-profile-form a:hover {
   text-decoration: none;
-}
-
-.kurierchikof-rs-profile-form .custom-font {
-  font-family: 'Open Sans', sans-serif !important;
 }
 
 /* .kurierchikof-rs-profile-form */
@@ -43,7 +94,7 @@ body {
 }
 
 .kurierchikof-rs-profile-form .custom-user-photo {
-  display: block;
+  max-width: 100%;
   width: 100%;
   height: auto;
 }
@@ -51,7 +102,7 @@ body {
 .kurierchikof-rs-profile-form .custom-user-info {
   width: 100%;
   padding-top: 20px;
-  padding-bottom: 23px;
+  padding-bottom: 18px;
   padding-left: 20px;
   padding-right: 20px;
   border-bottom: 1px solid #ebebeb;
@@ -60,10 +111,33 @@ body {
 .kurierchikof-rs-profile-form .custom-user-name {
   color: #424242;
   font-size: 18px;
-  margin-bottom: 12px;
+  margin-bottom: 3px;
   margin-top: 0;
   text-align: left;
 }
+
+.kurierchikof-rs-profile-form .custom-nav-link {
+  margin-bottom: 0;
+  font-size: 13px;
+  font-family: 'Open Sans Regular', sans-serif;
+  color: rgb(146, 149, 148);
+  line-height: 1.538;
+  text-align: left;
+  padding-right: 0;
+  letter-spacing: .33px;
+}
+
+.kurierchikof-rs-profile-form .custom-nav-link,
+.kurierchikof-rs-profile-form .custom-nav-link:hover,
+.kurierchikof-rs-profile-form .custom-nav-link:focus{
+  text-decoration: underline !important;
+  background-color: transparent !important;
+}
+
+.kurierchikof-rs-profile-form .m-t-n5{
+  margin-top: -5px;
+}
+
 
 .kurierchikof-rs-profile-form .custom-user-name-caption {
   margin: 0;
@@ -89,25 +163,26 @@ body {
 }
 
 .kurierchikof-rs-profile-form .custom-user-balance {
-  margin-right: 34px;
+  margin-right: 24px;
 }
 
 .kurierchikof-rs-profile-form .custom-btn-group {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
-  padding-bottom: 7px;
+  padding-bottom: 12px;
 }
 
 .kurierchikof-rs-profile-form .custom-link-edit {
-  font-size: 13px;
+  font-size: 14px;
   color: #929594;
-  font-weight: bold;
   text-decoration: underline !important;
   line-height: 1.538;
   margin-left: 20px;
-  margin-bottom: 10px;
+  margin-top: 22px;
+  font-family: 'Myriad Pro Regular', sans-serif;
 }
+
 
 .kurierchikof-rs-profile-form .custom-info-wrapper {
   border-bottom: 1px solid #ebebeb;
@@ -116,7 +191,7 @@ body {
 .kurierchikof-rs-profile-form .custom-main-info {
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 36px;
+  padding-top: 32px;
   padding-bottom: 20px;
 }
 
@@ -137,9 +212,12 @@ body {
 .kurierchikof-rs-profile-form .custom-info-head {
   color: #424242;
   font-size: 18px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Myriad Pro Regular', sans-serif;
   text-align: left;
   margin-top: 0;
+  font-weight: bold;
+  letter-spacing: .01em;
+  margin-bottom: 2px;
 }
 
 .kurierchikof-rs-profile-form .custom-info-caption {
@@ -152,6 +230,7 @@ body {
   color: #424242;
   font-size: 14px;
   text-align: left;
+  margin-bottom: 5px;
 }
 
 .kurierchikof-rs-profile-form .custom-info-link {
@@ -209,71 +288,74 @@ body {
 .kurierchikof-rs-profile-form .custom-btn-del-profile {
   background-color: #f4f8f7;
   color: #929594;
-  font-size: 13px;
-  font-family: 'PT Sans', sans-serif;
-  padding: 13px 28px 12px 28px;
+  font-size: 14px;
+  font-family: 'Myriad Pro Regular', sans-serif;
+  padding: 9px 28px 8px 28px;
   text-align: center;
   margin-top: 30px;
   margin-left: 30px;
   margin-bottom: 34px;
-}
-
-.kurierchikof-rs-profile-form .custom-btn-del-profile:hover {
-  color: #333;
+  letter-spacing: .05em;
 }
 
 .kurierchikof-rs-profile-form .custom-btn-edit-profil {
-  font-family: 'PT Sans', sans-serif;
-  background-color: #54af3a;
-  color: #fff;
-  padding: 11px 15px 12px 15px;
-  font-size: 13px;
-  border: none;
+  font-family: 'Myriad Pro Regular', sans-serif;
+  background-color: #54af3a !important;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.538;
   text-align: center;
-  margin-bottom: 10px;
+  padding: 9px 20px 8px 20px;
+  margin-top: 17px;
+  letter-spacing: .03em;
 }
 
 .kurierchikof-rs-profile-form .custom-btn-edit-profil:hover {
   color: #fff;
 }
 
-/* kurierchikof-rs-top-menu */
+/* kurierchikof-rs-top-menu --*/
 
 .kurierchikof-rs-top-menu .no-word-wrap {
   white-space: nowrap;
 }
 
 .kurierchikof-rs-top-menu .custom-nav {
-  height: 78px;
+  height: 70px;
   box-shadow: 0px 2px 7.6px 0.4px rgba(0, 0, 0, 0.09);
   background-color: #fff;
 }
 
-.kurierchikof-rs-top-menu .custom-logo-img {
-  transform: rotate(22deg);
-  margin-top: -12px;
-  margin-left: 6px;
-}
-
 .kurierchikof-rs-top-menu .custom-nav-item {
-  font-size: 14px;
   color: rgb(146, 149, 148);
-  line-height: 2.143;
   text-align: left;
   height: 100%;
+  font-size: 16px;
+  color: rgb(146, 149, 148);
+  line-height: 1.25;
+  border-bottom: 3px solid transparent;
+}
+
+.kurierchikof-rs-top-menu .custom-nav-item:last-child{
+  margin-left: 14px;
 }
 
 .kurierchikof-rs-top-menu .custom-nav-link {
   height: 100%;
   display: flex;
   align-items: center;
-  border-bottom: 3px solid transparent;
+  padding-bottom: 10px;
+  font-weight: 400;
 }
 
 .kurierchikof-rs-top-menu .custom-btn-create-order {
   background-color: #fff200;
-  font-size: 15px;
-  padding: 10px 18px 9px 18px;
+  color: #444444;
+  font-size: 16px;
+  letter-spacing: .053em;
+  padding: 6px 25px;
+  
 }
 
 .kurierchikof-rs-top-menu .custom-btn-cog {
@@ -299,7 +381,7 @@ body {
 
 .kurierchikof-rs-top-menu .custom-cog-color {
   color: #e0e0e0;
-  font-size: 38px;
+  font-size: 30px;
 }
 
 .kurierchikof-rs-top-menu .custom-btn-img {
@@ -307,7 +389,7 @@ body {
   border: 4px solid #ebebeb;
   width: 44px;
   height: 44px;
-  margin-right: 16px;
+  margin-right: 9px;
 }
 
 .kurierchikof-rs-top-menu .custom-btn-img > img {
@@ -317,13 +399,15 @@ body {
 }
 
 .kurierchikof-rs-top-menu .custom-btn-head {
-  font-size: 15px;
+  font-size: 16px;
   color: #424242;
   margin-bottom: 0;
+  margin-top: 13px;
 }
 
 .kurierchikof-rs-top-menu .custom-btn-caption {
-  font-size: 13px;
+  font-size: 12px;
+  color: #929594;
 }
 
 .kurierchikof-rs-top-menu .custom-nav-btn-link {
@@ -332,47 +416,131 @@ body {
   padding: 0 !important;
 }
 
+.kurierchikof-rs-top-menu .custom-nav-btn-link:active,
+.kurierchikof-rs-top-menu .custom-nav-btn-link:focus{
+  background-color: #fff;
+}
+
 .kurierchikof-rs-top-menu .custom-nav-btn-link:hover,
 .kurierchikof-rs-top-menu .custom-nav-btn-link:focus {
   color: #777 !important;
 }
 
 .kurierchikof-rs-top-menu .custom-dropdown {
-  width: 225px;
-  box-shadow: 0px 2px 7.6px 0.4px rgba(0, 0, 0, 0.09) !important;
+  box-shadow: 0px 2px 7.6px 0.4px rgba(0, 0, 0, 0.09);
   border: none !important;
   padding-left: 15px;
   padding-right: 15px;
+  left: -39px !important;
+  min-width: 222px; 
+}
+
+.kurierchikof-rs-top-menu .custom-dropdown::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7px;box-shadow: 0px 7.6px 7.6px -3.9px rgba(0, 0, 0, 0.09) inset;
+}
+
+.kurierchikof-rs-top-menu .custom-dropdown .fa-li{
+  left: 0 !important;
 }
 
 .kurierchikof-rs-top-menu .custom-dropdown-link {
   font-size: 14px;
   color: #929594 !important;
-  line-height: 2.143 !important;
   text-align: left;
   padding-left: 0 !important;
   padding-right: 0 !important;
-  transition: color .3s ease-in-out;
+  transition: color .3s;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+.kurierchikof-rs-top-menu .custom-dropdown-link .fas{
+  margin-left: -4px;
+}
+
+.kurierchikof-rs-top-menu .p-0 {
+  padding: 0 !important;
 }
 
 .kurierchikof-rs-top-menu .custom-dropdown-comment {
   font-size: 13px;
   color: rgb(66, 66, 66);
   line-height: 1.308;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .kurierchikof-rs-top-menu .custom-dropdown-comment:first-child {
-  margin-top: 15px;
+  margin-top: 11px;
 }
 
 .kurierchikof-rs-top-menu .custom-dropdown-comment:last-child {
-  margin-bottom: 15px;
+  margin-bottom: 3px;
 }
 
 .kurierchikof-rs-top-menu .custom-dropdown-bonuce {
   margin-left: 28px;
 }
+
+.kurierchikof-rs-top-menu .m-l-1p {
+  margin-left: 3%;
+}
+
+.kurierchikof-rs-top-menu .m-l-15 {
+  margin-left: 15px;
+}
+
+.kurierchikof-rs-top-menu .m-b-5 {
+  margin-bottom: 5px;
+}
+
+.kurierchikof-rs-top-menu .h-100 {
+  height: 100%;
+}
+
+.kurierchikof-rs-top-menu .w-100p {
+  width: 100%;
+}
+
+.kurierchikof-rs-top-menu .dropdown-menu .divider{
+  margin-bottom: 6px;
+}
+
+.kurierchikof-rs-top-menu .navbar-header {
+  width: 150px;
+}
+
+.kurierchikof-rs-top-menu .navbar-brand {
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
+}
+
+.kurierchikof-rs-top-menu .navbar-form {
+  margin: 0;
+}
+
+.kurierchikof-rs-top-menu .dropdown-menu > li > a:hover,
+.kurierchikof-rs-top-menu .dropdown-menu > li > a:focus {
+  background-color: transparent !important;
+  color: #262626 !important;
+}
+
+.kurierchikof-rs-top-menu .navbar-nav {
+  margin: 0;
+}
+
+.kurierchikof-rs-top-menu .navbar-default .navbar-nav > .open > a, 
+.kurierchikof-rs-top-menu .navbar-default .navbar-nav > .open > a:hover, 
+.kurierchikof-rs-top-menu .navbar-default .navbar-nav > .open > a:focus{
+  background-color: #fff;
+}
+
 
 /* modal from edit stryles */
 
@@ -392,26 +560,30 @@ body {
 
 .kurierchikof-rs-modal-del-form .custom-modal-head,
 .kurierchikof-rs-modal-edit-form .custom-modal-head {
-  font-family: 'PT Sans', sans-serif;
-  font-size: 26px;
+  font-family: 'Myriad Pro Regular', sans-serif;
+  font-size: 27px;
   color: #444444;
   text-align: left;
-  margin-top: 0;
+  margin-top: 18px;
   margin-bottom: 0;
+  letter-spacing: .04em;
 }
 
 .kurierchikof-rs-modal-edit-form .custom-modal-group-head {
   color: #424242;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Myriad Pro Regular', sans-serif;
   font-size: 18px;
   text-align: left;
   font-weight: bold;
   margin-top: 0;
+  letter-spacing: .01em;
+  margin-bottom: 0px;
 }
 
 .kurierchikof-rs-modal-edit-form .custom-modal-head-caption {
   font-size: 12px;
   color: #929594;
+  margin-bottom: 5px;
 }
 
 .kurierchikof-rs-modal-del-form .custom-btn-close,
@@ -441,11 +613,11 @@ body {
 .kurierchikof-rs-modal-edit-form .custom-btn-save,
 .kurierchikof-rs-modal-del-form .custom-btn-ok,
 .kurierchikof-rs-modal-del-form .custom-btn-cal {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Myriad Pro Regular', sans-serif;
   background-color: #54af3a;
   color: #fff;
   padding: 13px 13px 12px 13px;
-  font-size: 13px;
+  font-size: 14px;
   border: none;
   text-align: center;
 }
@@ -453,7 +625,9 @@ body {
 .kurierchikof-rs-modal-edit-form .custom-btn-cancel {
   background-color: #f4f8f7;
   color: #929594;
-  margin-left: 13px;
+  margin-left: 14px;
+  letter-spacing: .05em;
+  padding: 10px 13px 9px 13px;
 }
 
 .kurierchikof-rs-modal-edit-form .do-text-align-center,
@@ -464,12 +638,20 @@ body {
 .kurierchikof-rs-modal-del-form .custom-btn-ok {
   background-color: #f4f8f7;
   color: #929594;
-  padding: 13px 40px 12px 40px;
+  padding: 10px 40px 9px 40px;
+  letter-spacing: .05em;
 }
 
 .kurierchikof-rs-modal-del-form .custom-btn-cal {
   margin-left: 15px;
-  padding: 13px 23px 12px 23px;
+  padding: 10px 23px 9px 23px;
+  letter-spacing: .05em;
+}
+
+.kurierchikof-rs-modal-edit-form .custom-btn-save{
+  padding: 10px 13px 9px 13px;
+  letter-spacing: .05em;
+  font-size: 14px;
 }
 
 .kurierchikof-rs-modal-edit-form .custom-btn-save:hover,
@@ -507,6 +689,10 @@ body {
 
 .kurierchikof-rs-modal-edit-form .left-addon > input {
   padding-left: 39px;
+}
+
+.kurierchikof-rs-modal-edit-form .left-addon-small > input {
+  padding-left: 25px;
 }
 
 .kurierchikof-rs-modal-edit-form .left-addon > select {
@@ -547,6 +733,10 @@ body {
   justify-content: center;
 }
 
+.kurierchikof-rs-profile-form .do-justify-space-between {
+  justify-content: space-between;
+}
+
 .kurierchikof-rs-modal-del-form .do-align-center,
 .kurierchikof-rs-top-menu .do-align-center,
 .kurierchikof-rs-profile-form .do-align-center {
@@ -557,25 +747,11 @@ body {
   align-items: flex-start;
 }
 
-.kurierchikof-rs-top-menu .p-0 {
-  padding: 0 !important;
-}
 
 .kurierchikof-rs-profile-form.m-t-n18 {
   margin-top: -18px;
 }
 
-.kurierchikof-rs-top-menu .m-l-1p {
-  margin-left: 3%;
-}
-
-.kurierchikof-rs-top-menu .m-l-15 {
-  margin-left: 15px;
-}
-
-.kurierchikof-rs-top-menu .m-b-5 {
-  margin-bottom: 5px;
-}
 
 .kurierchikof-rs-profile-form .m-b-20 {
   margin-bottom: 20px;
@@ -583,7 +759,7 @@ body {
 
 .kurierchikof-rs-modal-edit-form .m-t-20,
 .kurierchikof-rs-profile-form .m-t-20 {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .kurierchikof-rs-modal-del-form .m-t-30,
@@ -610,7 +786,7 @@ body {
 }
 
 .kurierchikof-rs-modal-edit-form .m-b-15 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .kurierchikof-rs-modal-edit-form .p-l-7_5 {
@@ -621,21 +797,11 @@ body {
   padding-right: 7.5px;
 }
 
-.kurierchikof-rs-top-menu .h-100 {
-  height: 100%;
-}
+
 
 .kurierchikof-rs-modal-edit-form .w-100p,
 .kurierchikof-rs-top-menu .w-100p {
   width: 100%;
-}
-
-.kurierchikof-rs-top-menu .w-25p {
-  width: 25%;
-}
-
-.kurierchikof-rs-top-menu .w-216 {
-  width: 216px;
 }
 
 .kurierchikof-rs-profile-form .col-p-0 {
@@ -683,16 +849,14 @@ body {
   width: 770px;
 }
 
-.kurierchikof-rs-modal-del-form .modal-dialog {
-  width: 395px;
-}
+.kurierchikof-rs-modal-del-form .modal-dialog {max-width: 472px;}
 
 .kurierchikof-rs-modal-edit-form .modal-header {
   position: relative;
   border-color: #ebebeb;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 18px;
 }
 
@@ -712,29 +876,6 @@ body {
   box-shadow: none;
 }
 
-.kurierchikof-rs-top-menu .navbar-header {
-  width: 150px;
-}
-
-.kurierchikof-rs-top-menu .navbar-brand {
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.kurierchikof-rs-top-menu .navbar-form {
-  margin: 0;
-}
-
-.kurierchikof-rs-top-menu .dropdown-menu > li > a:hover,
-.kurierchikof-rs-top-menu .dropdown-menu > li > a:focus {
-  background-color: transparent !important;
-  color: #262626 !important;
-}
-
-.kurierchikof-rs-top-menu .navbar-nav {
-  margin: 0;
-}
 
 @media (min-width: 768px) {
   .kurierchikof-rs-top-menu .custom-big-h-100 {
@@ -761,6 +902,22 @@ body {
   }
 }
 
+@media (max-width: 880px) {
+  /* menu */
+  .kurierchikof-rs-top-menu .custom-nav-item > a{
+    padding-left: 0;
+  }
+
+  .kurierchikof-rs-top-menu .custom-nav-item:last-child{
+    margin-left: 0;
+  }
+
+  .kurierchikof-rs-top-menu .custom-btn-cog{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 @media (max-width: 815px) {
 
   .kurierchikof-rs-modal-edit-form .modal-dialog,
@@ -771,7 +928,114 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  /* menu */
+  .kurierchikof-rs-top-menu .custom-nav-link{
+    font-size: 14px;
+  }
+
+  .kurierchikof-rs-top-menu .custom-btn-create-order{
+    font-size: 14px !important;
+  }  
+}
+
+@media (max-width: 767px) {
+
+  /* menu */
+  .kurierchikof-rs-top-menu .custom-dropdown::before{
+    display: none;
+  }
+
+  .kurierchikof-rs-top-menu .custom-nav-link{
+    padding-left: 15px !important;
+    font-size: 16px;
+  }
+
+  .kurierchikof-rs-top-menu .custom-dropdown{
+    width: 95% !important;
+    box-shadow: none !important;
+  }
+
+  .kurierchikof-rs-top-menu .container > .navbar-collapse{
+
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .kurierchikof-rs-top-menu .container > .navbar-collapse::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    height: 7px;
+    box-shadow: 0px 7.6px 7.6px -3.9px rgba(0, 0, 0, 0.09) inset;
+  }
+
+  .kurierchikof-rs-top-menu .fa-ul {
+    margin-left: 0 !important;
+  }
+
+  .kurierchikof-rs-top-menu .custom-thrid-line,
+  .kurierchikof-rs-top-menu .custom-second-line,
+  .kurierchikof-rs-top-menu .custom-first-line {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .kurierchikof-rs-top-menu .custom-second-line,
+  .kurierchikof-rs-top-menu .custom-first-line {
+    margin-left: 15px;
+  }
+
+  .kurierchikof-rs-top-menu .custom-first-line {
+    margin-top: 25px !important;
+  }
+
+  .kurierchikof-rs-top-menu .custom-second-line {
+    align-items: flex-start;
+  }
+
+  .kurierchikof-rs-top-menu .m-l-1p {
+    margin-left: 0;
+  }
+
+  .kurierchikof-rs-top-menu .w-216 {
+    width: auto;
+  }
+
+  .kurierchikof-rs-top-menu .custom-m-t-10 {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .kurierchikof-rs-top-menu .custom-small-h100 {
+    height: 100% !important;
+  }
+
+  .kurierchikof-rs-top-menu .custom-align-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .kurierchikof-rs-top-menu .h-100 {
+    height: auto;
+  }
+
+  .kurierchikof-rs-top-menu .navbar-collapse {
+    background-color: #fff;
+  }
+
+  .kurierchikof-rs-top-menu .navbar-default .navbar-collapse,
+  .kurierchikof-rs-top-menu .navbar-default .navbar-form {
+    border-color: transparent !important;
+  }
+  
+  /*  */
+
   .kurierchikof-rs-modal-edit-form .p-l-7_5 {
     padding-left: 15px;
   }
@@ -822,64 +1086,14 @@ body {
     margin-left: 0;
   }
 
-  .kurierchikof-rs-top-menu .custom-nav-item {
-    margin-bottom: 5px;
-  }
-
-  .kurierchikof-rs-top-menu .custom-thrid-line,
-  .kurierchikof-rs-top-menu .custom-second-line,
-  .kurierchikof-rs-top-menu .custom-first-line {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  .kurierchikof-rs-top-menu .custom-first-line {
-    margin-top: 25px !important;
-  }
-
-  .kurierchikof-rs-top-menu .custom-second-line {
-    align-items: flex-start;
-  }
-
-  .kurierchikof-rs-top-menu .m-l-1p {
-    margin-left: 0;
-  }
-
-  .kurierchikof-rs-top-menu .w-216 {
-    width: auto;
-  }
-
-  .kurierchikof-rs-top-menu .custom-m-t-10 {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
-  }
-
-  .kurierchikof-rs-top-menu .custom-small-h100 {
-    height: 100% !important;
-  }
-
-  .kurierchikof-rs-top-menu .custom-align-btn {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  .kurierchikof-rs-top-menu .h-100 {
-    height: auto;
-  }
-
-  .kurierchikof-rs-top-menu .navbar-collapse {
-    background-color: #fff;
-  }
-
-  .kurierchikof-rs-top-menu .navbar-default .navbar-collapse,
-  .kurierchikof-rs-top-menu .navbar-default .navbar-form {
-    border-color: transparent !important;
-  }
 }
 
 @media (max-width: 468px) {
+
+  .kurierchikof-rs-profile-form .custom-nav-link{
+    padding-left: 0 !important;
+  }
+
   .kurierchikof-rs-profile-form .do-vsmall-direction-column {
     flex-direction: column;
   }
