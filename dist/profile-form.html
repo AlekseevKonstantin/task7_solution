@@ -113,14 +113,16 @@
   </div> 
 
   <div class="kurierchikof-rs-profile-form m-t-n18">
-    <div class="container custom-font">
+    <div class="container">
       <div class="row">
 
         <div class="col-sm-12 m-b-17 do-flex do-justify-space-between do-vsmall-direction-column do-vsmall-align-start">
           <h2 class="custom-head">Профиль</h2>
 
           <ul class="nav do-flex do-align-center do-vsmall-direction-column  do-vsmall-align-center h-100 m-t-n5">
-            <li role="presentation" class="custom-wrapper-nav-link"><a href="#" class="custom-nav-link">Редактировать профиль</a></li>
+            <li role="presentation" class="custom-wrapper-nav-link">
+              <a href="#" class="custom-nav-link" data-toggle="modal" data-target="#editModal">Редактировать профиль</a>
+            </li>
           </ul>  
         </div>
 
@@ -254,7 +256,7 @@
   </div>
 
   <div class="kurierchikof-rs-modal-edit-form">
-    <div class="modal fade custom-font" id="editModal" tabindex="-1" role="dialog">
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -548,7 +550,7 @@
     </div>          
   </div>
 
-  <div class="kurierchikof-rs-modal-del-form custom-font">
+  <div class="kurierchikof-rs-modal-del-form">
     <div class="modal fade " id="delModal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
